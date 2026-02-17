@@ -3,20 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Display Jadwal Sholat - Masjid Jami' Kampung Sewu</title>
+<title>Display Jadwal Sholat - Masjid kampungsewu</title>
 
 <style>
 
 
 /* HEADER */
 #headerTop{
-  display:grid;
-  grid-template-columns:1fr 2fr 1fr;
-  align-items:center;
-  background:rgba(0,0,0,.45);
-  padding:10px 30px;
-  border-radius:18px;
-  margin-bottom:25px;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: calc(100% - 40px);
+  max-width: 1600px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+
+  background: rgba(0,0,0,.55);
+  padding: 20px 40px;
+  border-radius: 20px;
+
+  z-index: 1000;
+  backdrop-filter: blur(6px);
 }
 
 #jamDigital{
@@ -372,4 +383,5 @@ setInterval(cekAdzan,1000);
 
 </body>
 </html>
+
 
